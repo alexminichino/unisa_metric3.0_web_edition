@@ -1,0 +1,111 @@
+#main {
+	min-height: 1000px;
+}
+
+.sidebar {
+	height: 100%;
+	position: fixed;
+	z-index: 999;
+	background-color: #43425D;
+	overflow-x: hidden;
+	padding-top: 60px;
+	width: 200px;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+}
+
+.sidebar a {
+	padding: 8px 8px 8px 15px;
+	text-decoration: none;
+	color: #818181;
+	transition: 0.3s;
+	vertical-align: middle;
+	display: inline-flex;
+	color: white;
+}
+
+.material-icons.viola {
+	color: #A5A4BF;
+}
+
+.sidebar a:hover {
+	color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #43425D;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+}
+
+.openbtn:hover {
+	background-color: #444;
+}
+
+.li_space {
+	margin-bottom: 30px;
+}
+
+.closebtn {
+	visibility: hidden;
+}
+
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+	.sidebar a {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.sidebar {
+		display: none;
+	}
+	
+	.container-fluid .col-md-2 {
+		z-index: 999 !important;
+		background: red;
+	}
+	.closebtn {
+		visibility: visible;
+	}
+	#mobileBar {
+		display: block !important;
+	}
+}
+
+.container-fluid .col-md-10 {
+	margin-top: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+
+	}
+
+#hamburgerButton {
+	
+}
+
+#mobileBar {
+	background: #43425D;
+	position: fixed;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}

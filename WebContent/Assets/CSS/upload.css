@@ -1,0 +1,42 @@
+#progressBar
+{
+	width:0px;
+	height:5px;
+	background-color:#F44336;
+	position:fixed;
+	top:0px;
+	left:0px;
+	display:none;
+}
+
+#progressBar.active
+{
+	display:block;
+	transition: 3s linear width;
+	-webkit-transition: 3s linear width;
+	-moz-transition: 3s linear width;
+	-o-transition: 3s linear width;
+	-ms-transition: 3s linear width;
+}
+
+#label
+{
+	font-size:20px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+#destination{
+	color:white !important;
+}
+#destination:hover{
+	color:white !important;
+}
+#destination:visited{
+	color:white !important;
+}
+#destination:active{
+	color:white !important;
+}
+#destination:focus{
+	color:white !important;
+}

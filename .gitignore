@@ -1,0 +1,12 @@
+.vscode/launch.json
+bin/*
+datasets/*
+doc/*
+build/*
+logs/*
+UNZIPPED_FILES/*
+ZIPPED_FILES/*
+UPLOADED_FILES/*
+RESULTS/*
+TESTING_FILES/*
+PROFILES/*
