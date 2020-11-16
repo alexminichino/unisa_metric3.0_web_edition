@@ -11,7 +11,19 @@ $(function()
 	
 
 	userName.focusout(function(){
-		value = $(this).val();
+		checkUsername();
+	});
+	
+	password.focusout(function(){
+		checkPassword();
+	});
+	
+	passwordConfirm.focusout(function(){
+		checkPasswordConfirm();
+	});
+
+	function checkUsername(ev){
+		value = userName.val();
 		if(value.length>=5 && value.length<=15){
 			alertUsername.slideUp();
 			submit.prop("disabled",false);
@@ -19,23 +31,25 @@ $(function()
 		else{
 			alertUsername.slideDown();
 			submit.prop("disabled",true);
+			stopEv(ev);
 		}
-	});
-	
-	password.focusout(function(){
-		value = $(this).val();
+	}
+
+	function checkPassword(ev){
+		value = password.val();
 		if(value.length>=5 && value.length<=8){
 			alertPassword.slideUp();
-			submit.prop("disabled",false); 
+			submit.prop("disabled",false);
 		}
 		else{
-			alertPassword.slideDown();
+			alertPassword.slideDown(ev);
 			submit.prop("disabled",true);
+			stopEv(ev);
 		}
-	});
-	
-	passwordConfirm.focusout(function(){
-		value = $(this).val();
+	}
+
+	function checkPasswordConfirm(ev){
+		value = passwordConfirm.val();
 		if(value == password.val()){
 			alertPasswordMatch.slideUp();
 			submit.prop("disabled",false);
@@ -43,7 +57,21 @@ $(function()
 		else{
 			alertPasswordMatch.slideDown();
 			submit.prop("disabled",true);
+			stopEv(ev);
 		}
+	}
+
+	function stopEv(ev){
+		if(ev != undefined){
+			ev.stopPropagation();
+			ev.preventDefault();
+		}
+	}
+
+	submit.click(function(ev){
+		checkUsername(ev);
+		checkPassword(ev);
+		checkPasswordConfirm(ev);
 	});
 	
 })

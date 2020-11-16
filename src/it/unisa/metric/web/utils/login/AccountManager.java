@@ -53,6 +53,18 @@ public class AccountManager {
 		}
 		return false;
 	}
+
+	public static boolean userExists(String username) {
+		ArrayList<Account> accountsList;
+		if((accountsList= FileUtils.deserializeObj(WebConstants.USERS_PROFILE_PATH,FILENAME)) == null) {
+			return false;
+		}
+		for (Account account : accountsList) {
+			if(account.getUsername().equals(username))
+				return true;
+		}
+		return false;
+	}
 	
 	
 	

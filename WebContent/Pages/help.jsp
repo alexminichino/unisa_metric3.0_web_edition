@@ -11,7 +11,7 @@
 			<form action="SendEmailServlet" method="post">
 				<div class="form-group">
 					<label for="email">Email:</label> 
-					<input type="text" class="form-control" id="email" name="emailFrom">
+					<input type="text" class="form-control" id="email" name="emailFrom" required>
 					<div class="alert alert-danger" id="alert" ><strong>Email non valida!</strong></div>
 				</div>
 				<div class="form-group">
@@ -20,7 +20,7 @@
 				</div>
 				<div class="form-group" style="margin-top: 5px;">
 					<label for="textArea">Text:</label>
-					<textarea id="text" class="form-control" name="content"></textarea>
+					<textarea required id="text" class="form-control" name="content"></textarea>
 					<div class="alert alert-danger" id="alertT" ><strong>Corpo della email vuoto!</strong></div>
 				</div>
 

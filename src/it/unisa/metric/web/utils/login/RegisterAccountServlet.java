@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class RegisterAccountServlet
@@ -54,12 +55,15 @@ public class RegisterAccountServlet extends HttpServlet {
 		Account newAc= new Account(name,surname,company,username, password);
 		ArrayList<Account> listaAccount=new ArrayList<Account>();
 		//Scrittura su file
-		
-		AccountManager.registerAccount(newAc);
-		request.getRequestDispatcher("Dispatcher?page=login").include(request, response);
-			
-		
-			
+
+		if (AccountManager.userExists(username)) {
+			request.setAttribute("errorUsername", true);
+			request.getRequestDispatcher("Dispatcher?page=newAccount").include(request, response);
+		}
+		else{
+			AccountManager.registerAccount(newAc);
+			request.getRequestDispatcher("Dispatcher?page=login").include(request, response);
+		}
 	}
 
 }

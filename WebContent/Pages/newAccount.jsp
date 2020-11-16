@@ -48,6 +48,9 @@
 
 		</form>
 	</div>
+	<% if (request.getAttribute("errorUsername")!=null){ %>
+		<jsp:include page="/Components/alertUsername.jsp"></jsp:include>
+	<% 	}%>
 </div>
 
 <script src="${pageContext.request.contextPath}/Assets/JS/register.js"></script>
