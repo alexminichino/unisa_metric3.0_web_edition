@@ -3,6 +3,7 @@ bin/*
 datasets/*
 doc/*
 build/*
+classes/*
 logs/*
 UNZIPPED_FILES/*
 ZIPPED_FILES/*
@@ -10,3 +11,5 @@ UPLOADED_FILES/*
 RESULTS/*
 TESTING_FILES/*
 PROFILES/*
+/*.plantuml
+src/**/*.plantuml

@@ -1,0 +1,48 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebArtificat">
+    <output-path>$PROJECT_DIR$/classes/artifacts/WebArtificat</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ProgettoIGES" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="antlr4-runtime-4.6.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="argparser.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="commons-collections4-4.1.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="commons-lang3-3.5.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="jgraph-5.13.0.0.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="jgrapht-core-1.1.0.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.core.jobs_3.9.1.v20170714-0547.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.core.resources_3.12.0.v20170417-1558.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.core.runtime_3.13.0.v20170207-1030.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.equinox.common_3.9.0.v20170207-1454.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.jdt.core_3.13.50.v20171007-0855.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.jface.text_3.12.0.v20170523-1043.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.osgi_3.12.50.v20170928-1321.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="org.eclipse.text_3.6.100.v20170203-0814.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="poi-3.17.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="poi-ooxml-3.17.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="poi-ooxml-schemas-3.17.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="rsyntaxtextarea-2.6.1.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="stanford-corenlp-3.9.1.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="weka.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="xmlbeans-2.6.0.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="activation.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="gson-2.8.5.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="mail.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="commons-fileupload-1.2.2.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="commons-io-2.6.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="junit5" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="jmockit.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="junit-tools.jar" module-name="ProgettoIGES" />
+          <element id="library" level="module" name="mockito-all-1.10.19.jar" module-name="ProgettoIGES" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../../../Program Files/Apache Software Foundation/Tomcat 9.0/lib/websocket-api.jar" />
+        </element>
+      </element>
+      <element id="dir-copy" path="$PROJECT_DIR$/WebContent" />
+    </root>
+  </artifact>
+</component>
